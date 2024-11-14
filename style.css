@@ -1,0 +1,216 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    overflow: hidden; /* Prevent body scroll */
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+/* Subject Section Styles */
+.subject-section {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.subject-header {
+    padding: 15px;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Different colors for each subject */
+.subject-physics .subject-header {
+    background-color: #4CAF50; /* Green */
+}
+
+.subject-chemistry .subject-header {
+    background-color: #FF5722; /* Orange */
+}
+
+.subject-maths .subject-header {
+    background-color: #2196F3; /* Blue */
+}
+
+.subject-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.subject-content.active {
+    max-height: 500px;
+}
+
+/* Lecture List Section */
+.lecture-list {
+    max-height: 80vh; /* Max height for the lecture list */
+    overflow-y: auto;  /* Enables scrolling */
+    padding-right: 15px; /* Prevents scroll bar overlap */
+    margin-top: 20px;
+}
+
+.lecture-item {
+    padding: 10px;
+    background-color: #ffffff;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Background Icon Styles */
+.background-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.background-icon {
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.1); /* Darkened */
+    position: absolute;
+    animation: float 20s infinite;
+}/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    overflow: hidden; /* Prevent body scroll */
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+/* Subject Section Styles */
+.subject-section {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.subject-header {
+    padding: 15px;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Different colors for each subject */
+.subject-physics .subject-header {
+    background-color: #4CAF50; /* Green */
+}
+
+.subject-chemistry .subject-header {
+    background-color: #FF5722; /* Orange */
+}
+
+.subject-maths .subject-header {
+    background-color: #2196F3; /* Blue */
+}
+
+.subject-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.subject-content.active {
+    max-height: 500px;
+}
+
+/* Scrollable Lecture List Section */
+.subject-content {
+    overflow-y: auto;  /* Enables scrolling */
+    padding-right: 10px;  /* Prevents scrollbar overlap */
+}
+
+.lecture-list {
+    display: block;
+    max-height: 400px;  /* Set a max height for the lecture list */
+    overflow-y: auto;  /* Enables vertical scrolling */
+}
+
+.lecture-item {
+    padding: 10px;
+    background-color: #ffffff;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Background Icon Styles */
+.background-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.background-icon {
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.1); /* Darkened */
+    position: absolute;
+    animation: float 20s infinite;
+}
+
+/* Random positioning and animations for the icons */
+.icon-book { top: 10%; left: 15%; }
+.icon-pencil { top: 20%; left: 45%; }
+.icon-bulb { top: 30%; left: 70%; }
+.icon-calculator { top: 40%; left: 10%; }
+.icon-pen { top: 50%; left: 60%; }
+/* ... add positioning for all icons to spread them across the screen ... */
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+
+/* Random positioning and animations for the icons */
+.icon-book { top: 10%; left: 15%; }
+.icon-pencil { top: 20%; left: 45%; }
+.icon-bulb { top: 30%; left: 70%; }
+.icon-calculator { top: 40%; left: 10%; }
+.icon-pen { top: 50%; left: 60%; }
+/* ... add positioning for all icons to spread them across the screen ... */
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}

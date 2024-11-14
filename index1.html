@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture Tracker </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Jee Lecture Tracker : Made for KANHA BHAIYA</h1>
+
+    <!-- Background Animation Icons -->
+    <div class="background-icons">
+        <div class="background-icon icon-book">📚</div>
+        <div class="background-icon icon-pencil">✏️</div>
+        <div class="background-icon icon-bulb">💡</div>
+        <div class="background-icon icon-calculator">📐</div>
+        <div class="background-icon icon-pen">🖊️</div>
+        <!-- Repeat icons to fill the background -->
+        <!-- Add more icons here as needed to fill the background -->
+    </div>
+
+    <!-- Physics Section -->
+    <div class="subject-section subject-physics">
+        <div class="subject-header">Physics</div>
+        <div class="subject-content">
+           <div class="lecture-item" onclick="toggleCheckbox('lecture-physics-1')"><input type="checkbox" id="lecture-physics-1" onchange="saveStatus('lecture-physics-1')"> Vectors L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-2')"><input type="checkbox" id="lecture-physics-2" onchange="saveStatus('lecture-physics-2')"> Vectors L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-3')"><input type="checkbox" id="lecture-physics-3" onchange="saveStatus('lecture-physics-3')"> Vectors L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-4')"><input type="checkbox" id="lecture-physics-4" onchange="saveStatus('lecture-physics-4')"> Basic Mathematics</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-5')"><input type="checkbox" id="lecture-physics-5" onchange="saveStatus('lecture-physics-5')"> Kinematics L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-6')"><input type="checkbox" id="lecture-physics-6" onchange="saveStatus('lecture-physics-6')"> Kinematics L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-7')"><input type="checkbox" id="lecture-physics-7" onchange="saveStatus('lecture-physics-7')"> Kinematics L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-8')"><input type="checkbox" id="lecture-physics-8" onchange="saveStatus('lecture-physics-8')"> Kinematics L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-9')"><input type="checkbox" id="lecture-physics-9" onchange="saveStatus('lecture-physics-9')"> NLM L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-10')"><input type="checkbox" id="lecture-physics-10" onchange="saveStatus('lecture-physics-10')"> NLM L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-11')"><input type="checkbox" id="lecture-physics-11" onchange="saveStatus('lecture-physics-11')"> NLM L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-12')"><input type="checkbox" id="lecture-physics-12" onchange="saveStatus('lecture-physics-12')"> NLM L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-13')"><input type="checkbox" id="lecture-physics-13" onchange="saveStatus('lecture-physics-13')"> WPE L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-14')"><input type="checkbox" id="lecture-physics-14" onchange="saveStatus('lecture-physics-14')"> WPE L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-15')"><input type="checkbox" id="lecture-physics-15" onchange="saveStatus('lecture-physics-15')"> WPE L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-16')"><input type="checkbox" id="lecture-physics-16" onchange="saveStatus('lecture-physics-16')"> WPE L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-17')"><input type="checkbox" id="lecture-physics-17" onchange="saveStatus('lecture-physics-17')"> MI L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-18')"><input type="checkbox" id="lecture-physics-18" onchange="saveStatus('lecture-physics-18')"> MI L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-19')"><input type="checkbox" id="lecture-physics-19" onchange="saveStatus('lecture-physics-19')"> MI L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-20')"><input type="checkbox" id="lecture-physics-20" onchange="saveStatus('lecture-physics-20')"> Torque and Angular Momentum</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-21')"><input type="checkbox" id="lecture-physics-21" onchange="saveStatus('lecture-physics-21')"> Rotational Motion L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-22')"><input type="checkbox" id="lecture-physics-22" onchange="saveStatus('lecture-physics-22')"> Rotational Motion L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-23')"><input type="checkbox" id="lecture-physics-23" onchange="saveStatus('lecture-physics-23')"> Rotational Motion L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-24')"><input type="checkbox" id="lecture-physics-24" onchange="saveStatus('lecture-physics-24')"> Rotational Motion L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-25')"><input type="checkbox" id="lecture-physics-25" onchange="saveStatus('lecture-physics-25')"> SHM L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-26')"><input type="checkbox" id="lecture-physics-26" onchange="saveStatus('lecture-physics-26')"> SHM L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-27')"><input type="checkbox" id="lecture-physics-27" onchange="saveStatus('lecture-physics-27')"> SHM L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-28')"><input type="checkbox" id="lecture-physics-28" onchange="saveStatus('lecture-physics-28')"> SHM L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-29')"><input type="checkbox" id="lecture-physics-29" onchange="saveStatus('lecture-physics-29')"> Gravitation L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-30')"><input type="checkbox" id="lecture-physics-30" onchange="saveStatus('lecture-physics-30')"> Gravitation L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-31')"><input type="checkbox" id="lecture-physics-31" onchange="saveStatus('lecture-physics-31')"> Gravitation L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-32')"><input type="checkbox" id="lecture-physics-32" onchange="saveStatus('lecture-physics-32')"> Gravitation L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-33')"><input type="checkbox" id="lecture-physics-33" onchange="saveStatus('lecture-physics-33')"> Electrostatics L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-34')"><input type="checkbox" id="lecture-physics-34" onchange="saveStatus('lecture-physics-34')"> Electrostatics L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-35')"><input type="checkbox" id="lecture-physics-35" onchange="saveStatus('lecture-physics-35')"> Electrostatics L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-36')"><input type="checkbox" id="lecture-physics-36" onchange="saveStatus('lecture-physics-36')"> Electrostatics L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-37')"><input type="checkbox" id="lecture-physics-37" onchange="saveStatus('lecture-physics-37')"> Electrostatics L-5</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-38')"><input type="checkbox" id="lecture-physics-38" onchange="saveStatus('lecture-physics-38')"> Electrostatics L-6</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-39')"><input type="checkbox" id="lecture-physics-39" onchange="saveStatus('lecture-physics-39')"> Capacitance L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-40')"><input type="checkbox" id="lecture-physics-40" onchange="saveStatus('lecture-physics-40')"> Capacitance L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-41')"><input type="checkbox" id="lecture-physics-41" onchange="saveStatus('lecture-physics-41')"> Capacitance L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-42')"><input type="checkbox" id="lecture-physics-42" onchange="saveStatus('lecture-physics-42')"> Current Electricity L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-43')"><input type="checkbox" id="lecture-physics-43" onchange="saveStatus('lecture-physics-43')"> Current Electricity L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-44')"><input type="checkbox" id="lecture-physics-44" onchange="saveStatus('lecture-physics-44')"> Current Electricity L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-45')"><input type="checkbox" id="lecture-physics-45" onchange="saveStatus('lecture-physics-45')"> Current Electricity L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-46')"><input type="checkbox" id="lecture-physics-46" onchange="saveStatus('lecture-physics-46')"> Current Electricity L-5</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-47')"><input type="checkbox" id="lecture-physics-47" onchange="saveStatus('lecture-physics-47')"> Current Electricity L-6</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-48')"><input type="checkbox" id="lecture-physics-48" onchange="saveStatus('lecture-physics-48')"> Current Electricity L-7</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-49')"><input type="checkbox" id="lecture-physics-49" onchange="saveStatus('lecture-physics-49')"> MEC L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-50')"><input type="checkbox" id="lecture-physics-50" onchange="saveStatus('lecture-physics-50')"> MEC L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-51')"><input type="checkbox" id="lecture-physics-51" onchange="saveStatus('lecture-physics-51')"> MEC L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-52')"><input type="checkbox" id="lecture-physics-52" onchange="saveStatus('lecture-physics-52')"> MEC L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-53')"><input type="checkbox" id="lecture-physics-53" onchange="saveStatus('lecture-physics-53')"> Magnetism L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-54')"><input type="checkbox" id="lecture-physics-54" onchange="saveStatus('lecture-physics-54')"> Magnetism L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-55')"><input type="checkbox" id="lecture-physics-55" onchange="saveStatus('lecture-physics-55')"> Magnetism L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-56')"><input type="checkbox" id="lecture-physics-56" onchange="saveStatus('lecture-physics-56')"> EMI L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-57')"><input type="checkbox" id="lecture-physics-57" onchange="saveStatus('lecture-physics-57')"> EMI L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-58')"><input type="checkbox" id="lecture-physics-58" onchange="saveStatus('lecture-physics-58')"> EMI L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-59')"><input type="checkbox" id="lecture-physics-59" onchange="saveStatus('lecture-physics-59')"> EMI L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-60')"><input type="checkbox" id="lecture-physics-60" onchange="saveStatus('lecture-physics-60')"> EMI L-5</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-61')"><input type="checkbox" id="lecture-physics-61" onchange="saveStatus('lecture-physics-61')"> Wave Optics L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-62')"><input type="checkbox" id="lecture-physics-62" onchange="saveStatus('lecture-physics-62')"> Wave Optics L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-63')"><input type="checkbox" id="lecture-physics-63" onchange="saveStatus('lecture-physics-63')"> Wave Optics L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-64')"><input type="checkbox" id="lecture-physics-64" onchange="saveStatus('lecture-physics-64')"> Wave Optics L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-65')"><input type="checkbox" id="lecture-physics-65" onchange="saveStatus('lecture-physics-65')"> E M Waves L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-66')"><input type="checkbox" id="lecture-physics-66" onchange="saveStatus('lecture-physics-66')"> Ray Optics L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-67')"><input type="checkbox" id="lecture-physics-67" onchange="saveStatus('lecture-physics-67')"> Ray Optics L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-68')"><input type="checkbox" id="lecture-physics-68" onchange="saveStatus('lecture-physics-68')"> Ray Optics L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-69')"><input type="checkbox" id="lecture-physics-69" onchange="saveStatus('lecture-physics-69')"> Ray Optics L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-70')"><input type="checkbox" id="lecture-physics-70" onchange="saveStatus('lecture-physics-70')"> Ray Optics L-5</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-71')"><input type="checkbox" id="lecture-physics-71" onchange="saveStatus('lecture-physics-71')"> Ray Optics L-6</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-72')"><input type="checkbox" id="lecture-physics-72" onchange="saveStatus('lecture-physics-72')"> Ray Optics L-7</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-73')"><input type="checkbox" id="lecture-physics-73" onchange="saveStatus('lecture-physics-73')"> Ray Optics L-8</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-74')"><input type="checkbox" id="lecture-physics-74" onchange="saveStatus('lecture-physics-74')"> Ray Optics L-9</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-75')"><input type="checkbox" id="lecture-physics-75" onchange="saveStatus('lecture-physics-75')"> Dual Nature of Radiation L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-76')"><input type="checkbox" id="lecture-physics-76" onchange="saveStatus('lecture-physics-76')"> Dual Nature of Radiation L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-77')"><input type="checkbox" id="lecture-physics-77" onchange="saveStatus('lecture-physics-77')"> Atomic Physics L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-78')"><input type="checkbox" id="lecture-physics-78" onchange="saveStatus('lecture-physics-78')"> Atomic Physics L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-79')"><input type="checkbox" id="lecture-physics-79" onchange="saveStatus('lecture-physics-79')"> Atomic Physics L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-80')"><input type="checkbox" id="lecture-physics-80" onchange="saveStatus('lecture-physics-80')"> Atomic Physics L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-81')"><input type="checkbox" id="lecture-physics-81" onchange="saveStatus('lecture-physics-81')"> Nuclear Physics L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-82')"><input type="checkbox" id="lecture-physics-82" onchange="saveStatus('lecture-physics-82')"> Nuclear Physics L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-83')"><input type="checkbox" id="lecture-physics-83" onchange="saveStatus('lecture-physics-83')"> Nuclear Physics L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-84')"><input type="checkbox" id="lecture-physics-84" onchange="saveStatus('lecture-physics-84')"> Nuclear Physics L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-85')"><input type="checkbox" id="lecture-physics-85" onchange="saveStatus('lecture-physics-85')"> Electronics L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-86')"><input type="checkbox" id="lecture-physics-86" onchange="saveStatus('lecture-physics-86')"> Electronics L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-87')"><input type="checkbox" id="lecture-physics-87" onchange="saveStatus('lecture-physics-87')"> Electronics L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-88')"><input type="checkbox" id="lecture-physics-88" onchange="saveStatus('lecture-physics-88')"> Electronics L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-89')"><input type="checkbox" id="lecture-physics-89" onchange="saveStatus('lecture-physics-89')"> Electronics L-5</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-90')"><input type="checkbox" id="lecture-physics-90" onchange="saveStatus('lecture-physics-90')"> Electronics L-6</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-91')"><input type="checkbox" id="lecture-physics-91" onchange="saveStatus('lecture-physics-91')"> Units and Measurements L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-92')"><input type="checkbox" id="lecture-physics-92" onchange="saveStatus('lecture-physics-92')"> Units and Measurements L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-93')"><input type="checkbox" id="lecture-physics-93" onchange="saveStatus('lecture-physics-93')"> Properties of Matter:Elasticity L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-94')"><input type="checkbox" id="lecture-physics-94" onchange="saveStatus('lecture-physics-94')"> Properties of Matter:Elasticity L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-95')"><input type="checkbox" id="lecture-physics-95" onchange="saveStatus('lecture-physics-95')"> Properties of Matter:Hydrostatics L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-96')"><input type="checkbox" id="lecture-physics-96" onchange="saveStatus('lecture-physics-96')"> Properties of Matter:Hydrostatics L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-97')"><input type="checkbox" id="lecture-physics-97" onchange="saveStatus('lecture-physics-97')"> Properties of Matter:Surface Tension L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-98')"><input type="checkbox" id="lecture-physics-98" onchange="saveStatus('lecture-physics-98')"> Properties of Matter:Surface Tension L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-99')"><input type="checkbox" id="lecture-physics-99" onchange="saveStatus('lecture-physics-99')"> Properties of Matter:Surface Tension L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-100')"><input type="checkbox" id="lecture-physics-100" onchange="saveStatus('lecture-physics-100')"> Properties of Matter:Surface Tension L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-101')"><input type="checkbox" id="lecture-physics-101" onchange="saveStatus('lecture-physics-101')"> Fluids L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-102')"><input type="checkbox" id="lecture-physics-102" onchange="saveStatus('lecture-physics-102')"> Fluids L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-103')"><input type="checkbox" id="lecture-physics-103" onchange="saveStatus('lecture-physics-103')"> Fluids L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-104')"><input type="checkbox" id="lecture-physics-104" onchange="saveStatus('lecture-physics-104')"> Fluids L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-105')"><input type="checkbox" id="lecture-physics-105" onchange="saveStatus('lecture-physics-105')"> Thermal Properties of Matter L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-106')"><input type="checkbox" id="lecture-physics-106" onchange="saveStatus('lecture-physics-106')"> Thermal Properties of Matter L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-107')"><input type="checkbox" id="lecture-physics-107" onchange="saveStatus('lecture-physics-107')"> Thermal Properties of Matter L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-108')"><input type="checkbox" id="lecture-physics-108" onchange="saveStatus('lecture-physics-108')"> Thermal Properties of Matter L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-109')"><input type="checkbox" id="lecture-physics-109" onchange="saveStatus('lecture-physics-109')"> KTG L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-110')"><input type="checkbox" id="lecture-physics-110" onchange="saveStatus('lecture-physics-110')"> KTG L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-111')"><input type="checkbox" id="lecture-physics-111" onchange="saveStatus('lecture-physics-111')"> KTG L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-112')"><input type="checkbox" id="lecture-physics-112" onchange="saveStatus('lecture-physics-112')"> KTG L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-113')"><input type="checkbox" id="lecture-physics-113" onchange="saveStatus('lecture-physics-113')"> Thermodynamics L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-114')"><input type="checkbox" id="lecture-physics-114" onchange="saveStatus('lecture-physics-114')"> Thermodynamics L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-115')"><input type="checkbox" id="lecture-physics-115" onchange="saveStatus('lecture-physics-115')"> Thermodynamics L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-116')"><input type="checkbox" id="lecture-physics-116" onchange="saveStatus('lecture-physics-116')"> Thermodynamics L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-117')"><input type="checkbox" id="lecture-physics-117" onchange="saveStatus('lecture-physics-117')"> Waves L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-118')"><input type="checkbox" id="lecture-physics-118" onchange="saveStatus('lecture-physics-118')"> Waves L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-119')"><input type="checkbox" id="lecture-physics-119" onchange="saveStatus('lecture-physics-119')"> Waves L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-physics-120')"><input type="checkbox" id="lecture-physics-120" onchange="saveStatus('lecture-physics-120')"> Waves L-4</div>
+        </div>
+    </div>
+
+    <!-- Chemistry Section -->
+    <div class="subject-section subject-chemistry">
+        <div class="subject-header">Chemistry</div>
+        <div class="subject-content">
+            <div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-1')"><input type="checkbox" id="lecture-chemistry-1" onchange="saveStatus('lecture-chemistry-1')"> Mole Concept L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-2')"><input type="checkbox" id="lecture-chemistry-2" onchange="saveStatus('lecture-chemistry-2')"> Mole Concept L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-3')"><input type="checkbox" id="lecture-chemistry-3" onchange="saveStatus('lecture-chemistry-3')"> Mole Concept L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-4')"><input type="checkbox" id="lecture-chemistry-4" onchange="saveStatus('lecture-chemistry-4')"> Mole Concept L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-5')"><input type="checkbox" id="lecture-chemistry-5" onchange="saveStatus('lecture-chemistry-5')"> Structure of Atom L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-6')"><input type="checkbox" id="lecture-chemistry-6" onchange="saveStatus('lecture-chemistry-6')"> Structure of Atom L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-7')"><input type="checkbox" id="lecture-chemistry-7" onchange="saveStatus('lecture-chemistry-7')"> Structure of Atom L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-8')"><input type="checkbox" id="lecture-chemistry-8" onchange="saveStatus('lecture-chemistry-8')"> Structure of Atom L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-9')"><input type="checkbox" id="lecture-chemistry-9" onchange="saveStatus('lecture-chemistry-9')"> Thermodynamics L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-10')"><input type="checkbox" id="lecture-chemistry-10" onchange="saveStatus('lecture-chemistry-10')"> Thermodynamics L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-11')"><input type="checkbox" id="lecture-chemistry-11" onchange="saveStatus('lecture-chemistry-11')"> Thermodynamics L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-12')"><input type="checkbox" id="lecture-chemistry-12" onchange="saveStatus('lecture-chemistry-12')"> Thermodynamics L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-13')"><input type="checkbox" id="lecture-chemistry-13" onchange="saveStatus('lecture-chemistry-13')"> Thermodynamics L-5</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-14')"><input type="checkbox" id="lecture-chemistry-14" onchange="saveStatus('lecture-chemistry-14')"> Thermodynamics L-6</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-15')"><input type="checkbox" id="lecture-chemistry-15" onchange="saveStatus('lecture-chemistry-15')"> Equilibrium L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-16')"><input type="checkbox" id="lecture-chemistry-16" onchange="saveStatus('lecture-chemistry-16')"> Equilibrium L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-17')"><input type="checkbox" id="lecture-chemistry-17" onchange="saveStatus('lecture-chemistry-17')"> Equilibrium L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-18')"><input type="checkbox" id="lecture-chemistry-18" onchange="saveStatus('lecture-chemistry-18')"> Equilibrium L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-19')"><input type="checkbox" id="lecture-chemistry-19" onchange="saveStatus('lecture-chemistry-19')"> Equilibrium L-5</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-20')"><input type="checkbox" id="lecture-chemistry-20" onchange="saveStatus('lecture-chemistry-20')"> Equilibrium L-6</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-21')"><input type="checkbox" id="lecture-chemistry-21" onchange="saveStatus('lecture-chemistry-21')"> Redox Reactions L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-22')"><input type="checkbox" id="lecture-chemistry-22" onchange="saveStatus('lecture-chemistry-22')"> Redox Reactions L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-23')"><input type="checkbox" id="lecture-chemistry-23" onchange="saveStatus('lecture-chemistry-23')"> Redox Reactions L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-24')"><input type="checkbox" id="lecture-chemistry-24" onchange="saveStatus('lecture-chemistry-24')"> States of Matter L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-25')"><input type="checkbox" id="lecture-chemistry-25" onchange="saveStatus('lecture-chemistry-25')"> States of Matter L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-26')"><input type="checkbox" id="lecture-chemistry-26" onchange="saveStatus('lecture-chemistry-26')"> States of Matter L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-27')"><input type="checkbox" id="lecture-chemistry-27" onchange="saveStatus('lecture-chemistry-27')"> Surface Chemistry L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-28')"><input type="checkbox" id="lecture-chemistry-28" onchange="saveStatus('lecture-chemistry-28')"> Surface Chemistry L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-29')"><input type="checkbox" id="lecture-chemistry-29" onchange="saveStatus('lecture-chemistry-29')"> Surface Chemistry L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-30')"><input type="checkbox" id="lecture-chemistry-30" onchange="saveStatus('lecture-chemistry-30')"> Solid State L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-31')"><input type="checkbox" id="lecture-chemistry-31" onchange="saveStatus('lecture-chemistry-31')"> Solid State L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-32')"><input type="checkbox" id="lecture-chemistry-32" onchange="saveStatus('lecture-chemistry-32')"> Solid State L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-33')"><input type="checkbox" id="lecture-chemistry-33" onchange="saveStatus('lecture-chemistry-33')"> Dilute Solution L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-34')"><input type="checkbox" id="lecture-chemistry-34" onchange="saveStatus('lecture-chemistry-34')"> Dilute Solution L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-35')"><input type="checkbox" id="lecture-chemistry-35" onchange="saveStatus('lecture-chemistry-35')"> Dilute Solution L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-36')"><input type="checkbox" id="lecture-chemistry-36" onchange="saveStatus('lecture-chemistry-36')"> Dilute Solution L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-37')"><input type="checkbox" id="lecture-chemistry-37" onchange="saveStatus('lecture-chemistry-37')"> Electrochemistry L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-38')"><input type="checkbox" id="lecture-chemistry-38" onchange="saveStatus('lecture-chemistry-38')"> Electrochemistry L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-39')"><input type="checkbox" id="lecture-chemistry-39" onchange="saveStatus('lecture-chemistry-39')"> Electrochemistry L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-40')"><input type="checkbox" id="lecture-chemistry-40" onchange="saveStatus('lecture-chemistry-40')"> Electrochemistry L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-41')"><input type="checkbox" id="lecture-chemistry-41" onchange="saveStatus('lecture-chemistry-41')"> Electrochemistry L-5</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-42')"><input type="checkbox" id="lecture-chemistry-42" onchange="saveStatus('lecture-chemistry-42')"> Chemical Kinetics L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-43')"><input type="checkbox" id="lecture-chemistry-43" onchange="saveStatus('lecture-chemistry-43')"> Chemical Kinetics L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-44')"><input type="checkbox" id="lecture-chemistry-44" onchange="saveStatus('lecture-chemistry-44')"> Chemical Kinetics L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-45')"><input type="checkbox" id="lecture-chemistry-45" onchange="saveStatus('lecture-chemistry-45')"> Chemical Kinetics L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-46')"><input type="checkbox" id="lecture-chemistry-46" onchange="saveStatus('lecture-chemistry-46')"> Nomenclature L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-47')"><input type="checkbox" id="lecture-chemistry-47" onchange="saveStatus('lecture-chemistry-47')"> Nomenclature L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-48')"><input type="checkbox" id="lecture-chemistry-48" onchange="saveStatus('lecture-chemistry-48')"> Isomerism L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-49')"><input type="checkbox" id="lecture-chemistry-49" onchange="saveStatus('lecture-chemistry-49')"> Isomerism L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-50')"><input type="checkbox" id="lecture-chemistry-50" onchange="saveStatus('lecture-chemistry-50')"> Isomerism L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-51')"><input type="checkbox" id="lecture-chemistry-51" onchange="saveStatus('lecture-chemistry-51')"> GOC L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-52')"><input type="checkbox" id="lecture-chemistry-52" onchange="saveStatus('lecture-chemistry-52')"> GOC L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-53')"><input type="checkbox" id="lecture-chemistry-53" onchange="saveStatus('lecture-chemistry-53')"> GOC L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-54')"><input type="checkbox" id="lecture-chemistry-54" onchange="saveStatus('lecture-chemistry-54')"> GOC L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-55')"><input type="checkbox" id="lecture-chemistry-55" onchange="saveStatus('lecture-chemistry-55')"> GOC L-5</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-56')"><input type="checkbox" id="lecture-chemistry-56" onchange="saveStatus('lecture-chemistry-56')"> Hydrocarbons L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-57')"><input type="checkbox" id="lecture-chemistry-57" onchange="saveStatus('lecture-chemistry-57')"> Hydrocarbons L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-58')"><input type="checkbox" id="lecture-chemistry-58" onchange="saveStatus('lecture-chemistry-58')"> Hydrocarbons L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-59')"><input type="checkbox" id="lecture-chemistry-59" onchange="saveStatus('lecture-chemistry-59')"> Hydrocarbons L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-60')"><input type="checkbox" id="lecture-chemistry-60" onchange="saveStatus('lecture-chemistry-60')"> Hydrocarbons L-5</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-61')"><input type="checkbox" id="lecture-chemistry-61" onchange="saveStatus('lecture-chemistry-61')"> Haloalkanes Haloarenes L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-62')"><input type="checkbox" id="lecture-chemistry-62" onchange="saveStatus('lecture-chemistry-62')"> Haloalkanes Haloarenes L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-63')"><input type="checkbox" id="lecture-chemistry-63" onchange="saveStatus('lecture-chemistry-63')"> Haloalkanes Haloarenes L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-64')"><input type="checkbox" id="lecture-chemistry-64" onchange="saveStatus('lecture-chemistry-64')"> Haloalkanes Haloarenes L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-65')"><input type="checkbox" id="lecture-chemistry-65" onchange="saveStatus('lecture-chemistry-65')"> Haloalkanes Haloarenes L-5</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-66')"><input type="checkbox" id="lecture-chemistry-66" onchange="saveStatus('lecture-chemistry-66')"> Alcohol Phenol Ether L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-67')"><input type="checkbox" id="lecture-chemistry-67" onchange="saveStatus('lecture-chemistry-67')"> Alcohol Phenol Ether L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-68')"><input type="checkbox" id="lecture-chemistry-68" onchange="saveStatus('lecture-chemistry-68')"> Alcohol Phenol Ether L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-69')"><input type="checkbox" id="lecture-chemistry-69" onchange="saveStatus('lecture-chemistry-69')"> Alcohol Phenol Ether L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-70')"><input type="checkbox" id="lecture-chemistry-70" onchange="saveStatus('lecture-chemistry-70')"> Carbonyl Compounds L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-71')"><input type="checkbox" id="lecture-chemistry-71" onchange="saveStatus('lecture-chemistry-71')"> Carbonyl Compounds L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-72')"><input type="checkbox" id="lecture-chemistry-72" onchange="saveStatus('lecture-chemistry-72')"> Carbonyl Compounds L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-73')"><input type="checkbox" id="lecture-chemistry-73" onchange="saveStatus('lecture-chemistry-73')"> Carbonyl Compounds L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-74')"><input type="checkbox" id="lecture-chemistry-74" onchange="saveStatus('lecture-chemistry-74')"> Amines L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-75')"><input type="checkbox" id="lecture-chemistry-75" onchange="saveStatus('lecture-chemistry-75')"> Amines L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-76')"><input type="checkbox" id="lecture-chemistry-76" onchange="saveStatus('lecture-chemistry-76')"> Amines L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-77')"><input type="checkbox" id="lecture-chemistry-77" onchange="saveStatus('lecture-chemistry-77')"> Amines L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-78')"><input type="checkbox" id="lecture-chemistry-78" onchange="saveStatus('lecture-chemistry-78')"> POC L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-79')"><input type="checkbox" id="lecture-chemistry-79" onchange="saveStatus('lecture-chemistry-79')"> POC L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-80')"><input type="checkbox" id="lecture-chemistry-80" onchange="saveStatus('lecture-chemistry-80')"> Periodic Properties L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-81')"><input type="checkbox" id="lecture-chemistry-81" onchange="saveStatus('lecture-chemistry-81')"> Periodic Properties L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-82')"><input type="checkbox" id="lecture-chemistry-82" onchange="saveStatus('lecture-chemistry-82')"> Periodic Properties L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-83')"><input type="checkbox" id="lecture-chemistry-83" onchange="saveStatus('lecture-chemistry-83')"> Chemical Bonding L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-84')"><input type="checkbox" id="lecture-chemistry-84" onchange="saveStatus('lecture-chemistry-84')"> Chemical Bonding L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-85')"><input type="checkbox" id="lecture-chemistry-85" onchange="saveStatus('lecture-chemistry-85')"> Chemical Bonding L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-86')"><input type="checkbox" id="lecture-chemistry-86" onchange="saveStatus('lecture-chemistry-86')"> Chemical Bonding L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-87')"><input type="checkbox" id="lecture-chemistry-87" onchange="saveStatus('lecture-chemistry-87')"> Chemical Bonding L-5</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-88')"><input type="checkbox" id="lecture-chemistry-88" onchange="saveStatus('lecture-chemistry-88')"> Chemical Bonding L-6</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-89')"><input type="checkbox" id="lecture-chemistry-89" onchange="saveStatus('lecture-chemistry-89')"> d and f block elements L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-90')"><input type="checkbox" id="lecture-chemistry-90" onchange="saveStatus('lecture-chemistry-90')"> d and f block elements L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-91')"><input type="checkbox" id="lecture-chemistry-91" onchange="saveStatus('lecture-chemistry-91')"> d and f block elements L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-92')"><input type="checkbox" id="lecture-chemistry-92" onchange="saveStatus('lecture-chemistry-92')"> d and f block elements L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-93')"><input type="checkbox" id="lecture-chemistry-93" onchange="saveStatus('lecture-chemistry-93')"> Coordination Compounds L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-94')"><input type="checkbox" id="lecture-chemistry-94" onchange="saveStatus('lecture-chemistry-94')"> Coordination Compounds L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-95')"><input type="checkbox" id="lecture-chemistry-95" onchange="saveStatus('lecture-chemistry-95')"> Coordination Compounds L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-96')"><input type="checkbox" id="lecture-chemistry-96" onchange="saveStatus('lecture-chemistry-96')"> Coordination Compounds L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-97')"><input type="checkbox" id="lecture-chemistry-97" onchange="saveStatus('lecture-chemistry-97')"> Coordination Compounds L-5</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-98')"><input type="checkbox" id="lecture-chemistry-98" onchange="saveStatus('lecture-chemistry-98')"> p block elements L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-99')"><input type="checkbox" id="lecture-chemistry-99" onchange="saveStatus('lecture-chemistry-99')"> p block elements L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-100')"><input type="checkbox" id="lecture-chemistry-100" onchange="saveStatus('lecture-chemistry-100')"> p block elements L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-101')"><input type="checkbox" id="lecture-chemistry-101" onchange="saveStatus('lecture-chemistry-101')"> p block elements L-4</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-102')"><input type="checkbox" id="lecture-chemistry-102" onchange="saveStatus('lecture-chemistry-102')"> p block elements L-5</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-103')"><input type="checkbox" id="lecture-chemistry-103" onchange="saveStatus('lecture-chemistry-103')"> p block elements L-6</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-104')"><input type="checkbox" id="lecture-chemistry-104" onchange="saveStatus('lecture-chemistry-104')"> Hydrogen L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-105')"><input type="checkbox" id="lecture-chemistry-105" onchange="saveStatus('lecture-chemistry-105')"> Hydrogen L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-106')"><input type="checkbox" id="lecture-chemistry-106" onchange="saveStatus('lecture-chemistry-106')"> s block elements L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-107')"><input type="checkbox" id="lecture-chemistry-107" onchange="saveStatus('lecture-chemistry-107')"> s block elements L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-108')"><input type="checkbox" id="lecture-chemistry-108" onchange="saveStatus('lecture-chemistry-108')"> s block elements L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-109')"><input type="checkbox" id="lecture-chemistry-109" onchange="saveStatus('lecture-chemistry-109')"> Metallurgy L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-110')"><input type="checkbox" id="lecture-chemistry-110" onchange="saveStatus('lecture-chemistry-110')"> Metallurgy L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-111')"><input type="checkbox" id="lecture-chemistry-111" onchange="saveStatus('lecture-chemistry-111')"> Metallurgy L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-112')"><input type="checkbox" id="lecture-chemistry-112" onchange="saveStatus('lecture-chemistry-112')"> Qualitative Analysis L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-113')"><input type="checkbox" id="lecture-chemistry-113" onchange="saveStatus('lecture-chemistry-113')"> Qualitative Analysis L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-114')"><input type="checkbox" id="lecture-chemistry-114" onchange="saveStatus('lecture-chemistry-114')"> Qualitative Analysis L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-115')"><input type="checkbox" id="lecture-chemistry-115" onchange="saveStatus('lecture-chemistry-115')"> Biomolecules L-1</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-116')"><input type="checkbox" id="lecture-chemistry-116" onchange="saveStatus('lecture-chemistry-116')"> Biomolecules L-2</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-117')"><input type="checkbox" id="lecture-chemistry-117" onchange="saveStatus('lecture-chemistry-117')"> Biomolecules L-3</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-118')"><input type="checkbox" id="lecture-chemistry-118" onchange="saveStatus('lecture-chemistry-118')"> Polymer One Shot</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-119')"><input type="checkbox" id="lecture-chemistry-119" onchange="saveStatus('lecture-chemistry-119')"> CIEL One shot</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-chemistry-120')"><input type="checkbox" id="lecture-chemistry-120" onchange="saveStatus('lecture-chemistry-120')"> Environmental Chemistry One shot</div>
+        </div>
+    </div>
+
+    <!-- Maths Section -->
+    <div class="subject-section subject-maths">
+        <div class="subject-header">Maths</div>
+        <div class="subject-content">
+            <div class="lecture-item" onclick="toggleCheckbox('lecture-maths-1')">
+    <input type="checkbox" id="lecture-maths-1" onchange="saveStatus('lecture-maths-1')"> Basic Mathematics L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-2')">
+    <input type="checkbox" id="lecture-maths-2" onchange="saveStatus('lecture-maths-2')"> Basic Mathematics L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-3')">
+    <input type="checkbox" id="lecture-maths-3" onchange="saveStatus('lecture-maths-3')"> Basic Mathematics L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-4')">
+    <input type="checkbox" id="lecture-maths-4" onchange="saveStatus('lecture-maths-4')"> Basic Mathematics L-4
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-5')">
+    <input type="checkbox" id="lecture-maths-5" onchange="saveStatus('lecture-maths-5')"> Basic Mathematics L-6
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-6')">
+    <input type="checkbox" id="lecture-maths-6" onchange="saveStatus('lecture-maths-6')"> Quadratic Equations L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-7')">
+    <input type="checkbox" id="lecture-maths-7" onchange="saveStatus('lecture-maths-7')"> Quadratic Equations L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-8')">
+    <input type="checkbox" id="lecture-maths-8" onchange="saveStatus('lecture-maths-8')"> Quadratic Equations L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-9')">
+    <input type="checkbox" id="lecture-maths-9" onchange="saveStatus('lecture-maths-9')"> Quadratic Equations L-4
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-10')">
+    <input type="checkbox" id="lecture-maths-10" onchange="saveStatus('lecture-maths-10')"> Sequence and Series L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-11')">
+    <input type="checkbox" id="lecture-maths-11" onchange="saveStatus('lecture-maths-11')"> Sequence and Series L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-12')">
+    <input type="checkbox" id="lecture-maths-12" onchange="saveStatus('lecture-maths-12')"> Sequence and Series L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-13')">
+    <input type="checkbox" id="lecture-maths-13" onchange="saveStatus('lecture-maths-13')"> Sequence and Series L-4
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-14')">
+    <input type="checkbox" id="lecture-maths-14" onchange="saveStatus('lecture-maths-14')"> Binomial Theorem L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-15')">
+    <input type="checkbox" id="lecture-maths-15" onchange="saveStatus('lecture-maths-15')"> Binomial Theorem L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-16')">
+    <input type="checkbox" id="lecture-maths-16" onchange="saveStatus('lecture-maths-16')"> Binomial Theorem L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-17')">
+    <input type="checkbox" id="lecture-maths-17" onchange="saveStatus('lecture-maths-17')"> Binomial Theorem L-4
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-18')">
+    <input type="checkbox" id="lecture-maths-18" onchange="saveStatus('lecture-maths-18')"> Binomial Theorem L-5
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-19')">
+    <input type="checkbox" id="lecture-maths-19" onchange="saveStatus('lecture-maths-19')"> Trigonometry L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-20')">
+    <input type="checkbox" id="lecture-maths-20" onchange="saveStatus('lecture-maths-20')"> Trigonometry L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-21')">
+    <input type="checkbox" id="lecture-maths-21" onchange="saveStatus('lecture-maths-21')"> Trigonometry L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-22')">
+    <input type="checkbox" id="lecture-maths-22" onchange="saveStatus('lecture-maths-22')"> Trigonometry L-4
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-23')">
+    <input type="checkbox" id="lecture-maths-23" onchange="saveStatus('lecture-maths-23')"> Matrices and Determinants L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-24')">
+    <input type="checkbox" id="lecture-maths-24" onchange="saveStatus('lecture-maths-24')"> Matrices and Determinants L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-25')">
+    <input type="checkbox" id="lecture-maths-25" onchange="saveStatus('lecture-maths-25')"> Matrices and Determinants L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-26')">
+    <input type="checkbox" id="lecture-maths-26" onchange="saveStatus('lecture-maths-26')"> Matrices and Determinants L-4
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-27')">
+    <input type="checkbox" id="lecture-maths-27" onchange="saveStatus('lecture-maths-27')"> Matrices and Determinants L-5
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-28')">
+    <input type="checkbox" id="lecture-maths-28" onchange="saveStatus('lecture-maths-28')"> Matrices and Determinants L-6
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-29')">
+    <input type="checkbox" id="lecture-maths-29" onchange="saveStatus('lecture-maths-29')"> Matrices and Determinants L-7
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-30')">
+    <input type="checkbox" id="lecture-maths-30" onchange="saveStatus('lecture-maths-30')"> Matrices and Determinants L-8
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-31')">
+    <input type="checkbox" id="lecture-maths-31" onchange="saveStatus('lecture-maths-31')"> Matrices and Determinants L-9
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-32')">
+    <input type="checkbox" id="lecture-maths-32" onchange="saveStatus('lecture-maths-32')"> Matrices and Determinants L-10
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-33')">
+    <input type="checkbox" id="lecture-maths-33" onchange="saveStatus('lecture-maths-33')"> Sets and Relations L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-34')">
+    <input type="checkbox" id="lecture-maths-34" onchange="saveStatus('lecture-maths-34')"> Sets and Relations L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-35')">
+    <input type="checkbox" id="lecture-maths-35" onchange="saveStatus('lecture-maths-35')"> Sets and Relations L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-36')">
+    <input type="checkbox" id="lecture-maths-36" onchange="saveStatus('lecture-maths-36')"> Functions L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-37')">
+    <input type="checkbox" id="lecture-maths-37" onchange="saveStatus('lecture-maths-37')"> Functions L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-38')">
+    <input type="checkbox" id="lecture-maths-38" onchange="saveStatus('lecture-maths-38')"> Functions L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-39')">
+    <input type="checkbox" id="lecture-maths-39" onchange="saveStatus('lecture-maths-39')"> Functions L-4
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-40')">
+    <input type="checkbox" id="lecture-maths-40" onchange="saveStatus('lecture-maths-40')"> Functions L-5
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-41')">
+    <input type="checkbox" id="lecture-maths-41" onchange="saveStatus('lecture-maths-41')"> ITF L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-42')">
+    <input type="checkbox" id="lecture-maths-42" onchange="saveStatus('lecture-maths-42')"> ITF L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-43')">
+    <input type="checkbox" id="lecture-maths-43" onchange="saveStatus('lecture-maths-43')"> ITF L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-44')">
+    <input type="checkbox" id="lecture-maths-44" onchange="saveStatus('lecture-maths-44')"> Limits L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-45')">
+    <input type="checkbox" id="lecture-maths-45" onchange="saveStatus('lecture-maths-45')"> Limits L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-46')">
+    <input type="checkbox" id="lecture-maths-46" onchange="saveStatus('lecture-maths-46')"> Limits L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-47')">
+    <input type="checkbox" id="lecture-maths-47" onchange="saveStatus('lecture-maths-47')"> Continuity and Differentiability L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-48')">
+    <input type="checkbox" id="lecture-maths-48" onchange="saveStatus('lecture-maths-48')"> Continuity and Differentiability L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-49')">
+    <input type="checkbox" id="lecture-maths-49" onchange="saveStatus('lecture-maths-49')"> Continuity and Differentiability L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-50')">
+    <input type="checkbox" id="lecture-maths-50" onchange="saveStatus('lecture-maths-50')"> Continuity and Differentiability L-4
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-51')">
+    <input type="checkbox" id="lecture-maths-51" onchange="saveStatus('lecture-maths-51')"> MOD L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-52')">
+    <input type="checkbox" id="lecture-maths-52" onchange="saveStatus('lecture-maths-52')"> MOD L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-53')">
+    <input type="checkbox" id="lecture-maths-53" onchange="saveStatus('lecture-maths-53')"> AOD L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-54')">
+    <input type="checkbox" id="lecture-maths-54" onchange="saveStatus('lecture-maths-54')"> AOD L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-55')">
+    <input type="checkbox" id="lecture-maths-55" onchange="saveStatus('lecture-maths-55')"> AOD L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-56')">
+    <input type="checkbox" id="lecture-maths-56" onchange="saveStatus('lecture-maths-56')"> AOD L-4
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-57')">
+    <input type="checkbox" id="lecture-maths-57" onchange="saveStatus('lecture-maths-57')"> AOD L-5
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-58')">
+    <input type="checkbox" id="lecture-maths-58" onchange="saveStatus('lecture-maths-58')"> Indefinite Integration L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-59')">
+    <input type="checkbox" id="lecture-maths-59" onchange="saveStatus('lecture-maths-59')"> Indefinite Integration L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-60')">
+    <input type="checkbox" id="lecture-maths-60" onchange="saveStatus('lecture-maths-60')"> Indefinite Integration L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-61')">
+    <input type="checkbox" id="lecture-maths-61" onchange="saveStatus('lecture-maths-61')"> Indefinite Integration L-4
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-62')">
+    <input type="checkbox" id="lecture-maths-62" onchange="saveStatus('lecture-maths-62')"> Indefinite Integration L-5
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-63')">
+    <input type="checkbox" id="lecture-maths-63" onchange="saveStatus('lecture-maths-63')"> Definite Integration L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-64')">
+    <input type="checkbox" id="lecture-maths-64" onchange="saveStatus('lecture-maths-64')"> Definite Integration L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-65')">
+    <input type="checkbox" id="lecture-maths-65" onchange="saveStatus('lecture-maths-65')"> Definite Integration L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-66')">
+    <input type="checkbox" id="lecture-maths-66" onchange="saveStatus('lecture-maths-66')"> Definite Integration L-4
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-67')">
+    <input type="checkbox" id="lecture-maths-67" onchange="saveStatus('lecture-maths-67')"> AUC L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-68')">
+    <input type="checkbox" id="lecture-maths-68" onchange="saveStatus('lecture-maths-68')"> AUC L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-69')">
+    <input type="checkbox" id="lecture-maths-69" onchange="saveStatus('lecture-maths-69')"> Differential Equation L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-70')">
+    <input type="checkbox" id="lecture-maths-70" onchange="saveStatus('lecture-maths-70')"> Differential Equation L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-71')">
+    <input type="checkbox" id="lecture-maths-71" onchange="saveStatus('lecture-maths-71')"> Differential Equation L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-72')">
+    <input type="checkbox" id="lecture-maths-72" onchange="saveStatus('lecture-maths-72')"> Differential Equation L-4
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-73')">
+    <input type="checkbox" id="lecture-maths-73" onchange="saveStatus('lecture-maths-73')"> Differential Equation L-5
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-74')">
+    <input type="checkbox" id="lecture-maths-74" onchange="saveStatus('lecture-maths-74')"> Vector Algebra L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-75')">
+    <input type="checkbox" id="lecture-maths-75" onchange="saveStatus('lecture-maths-75')"> Vector Algebra L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-76')">
+    <input type="checkbox" id="lecture-maths-76" onchange="saveStatus('lecture-maths-76')"> Vector Algebra L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-77')">
+    <input type="checkbox" id="lecture-maths-77" onchange="saveStatus('lecture-maths-77')"> Vector Algebra L-4
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-78')">
+    <input type="checkbox" id="lecture-maths-78" onchange="saveStatus('lecture-maths-78')"> Vector Algebra L-5
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-79')">
+    <input type="checkbox" id="lecture-maths-79" onchange="saveStatus('lecture-maths-79')"> 3D Geometry L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-80')">
+    <input type="checkbox" id="lecture-maths-80" onchange="saveStatus('lecture-maths-80')"> 3D Geometry L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-81')">
+    <input type="checkbox" id="lecture-maths-81" onchange="saveStatus('lecture-maths-81')"> 3D Geometry L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-82')">
+    <input type="checkbox" id="lecture-maths-82" onchange="saveStatus('lecture-maths-82')"> 3D Geometry L-4
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-83')">
+    <input type="checkbox" id="lecture-maths-83" onchange="saveStatus('lecture-maths-83')"> 3D Geometry L-5
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-84')">
+    <input type="checkbox" id="lecture-maths-84" onchange="saveStatus('lecture-maths-84')"> P and C L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-85')">
+    <input type="checkbox" id="lecture-maths-85" onchange="saveStatus('lecture-maths-85')"> P and C L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-86')">
+    <input type="checkbox" id="lecture-maths-86" onchange="saveStatus('lecture-maths-86')"> P and C L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-87')">
+    <input type="checkbox" id="lecture-maths-87" onchange="saveStatus('lecture-maths-87')"> P and C L-4
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-88')">
+    <input type="checkbox" id="lecture-maths-88" onchange="saveStatus('lecture-maths-88')"> P and C L-5
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-89')">
+    <input type="checkbox" id="lecture-maths-89" onchange="saveStatus('lecture-maths-89')"> P and C L-6
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-90')">
+    <input type="checkbox" id="lecture-maths-90" onchange="saveStatus('lecture-maths-90')"> Probability L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-91')">
+    <input type="checkbox" id="lecture-maths-91" onchange="saveStatus('lecture-maths-91')"> Probability L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-92')">
+    <input type="checkbox" id="lecture-maths-92" onchange="saveStatus('lecture-maths-92')"> Probability L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-93')">
+    <input type="checkbox" id="lecture-maths-93" onchange="saveStatus('lecture-maths-93')"> Probability L-4
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-94')">
+    <input type="checkbox" id="lecture-maths-94" onchange="saveStatus('lecture-maths-94')"> Probability L-5
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-95')">
+    <input type="checkbox" id="lecture-maths-95" onchange="saveStatus('lecture-maths-95')"> Probability L-6
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-96')">
+    <input type="checkbox" id="lecture-maths-96" onchange="saveStatus('lecture-maths-96')"> Straight Lines L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-97')">
+    <input type="checkbox" id="lecture-maths-97" onchange="saveStatus('lecture-maths-97')"> Straight Lines L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-98')">
+    <input type="checkbox" id="lecture-maths-98" onchange="saveStatus('lecture-maths-98')"> Straight Lines L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-99')">
+    <input type="checkbox" id="lecture-maths-99" onchange="saveStatus('lecture-maths-99')"> Straight Lines L-4
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-100')">
+    <input type="checkbox" id="lecture-maths-100" onchange="saveStatus('lecture-maths-100')"> Straight Lines L-5
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-101')">
+    <input type="checkbox" id="lecture-maths-101" onchange="saveStatus('lecture-maths-101')"> Circles L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-102')">
+    <input type="checkbox" id="lecture-maths-102" onchange="saveStatus('lecture-maths-102')"> Circles L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-103')">
+    <input type="checkbox" id="lecture-maths-103" onchange="saveStatus('lecture-maths-103')"> Circles L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-104')">
+    <input type="checkbox" id="lecture-maths-104" onchange="saveStatus('lecture-maths-104')"> Circles L-4
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-105')">
+    <input type="checkbox" id="lecture-maths-105" onchange="saveStatus('lecture-maths-105')"> Parabola L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-106')">
+    <input type="checkbox" id="lecture-maths-106" onchange="saveStatus('lecture-maths-106')"> Parabola L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-107')">
+    <input type="checkbox" id="lecture-maths-107" onchange="saveStatus('lecture-maths-107')"> Parabola L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-108')">
+    <input type="checkbox" id="lecture-maths-108" onchange="saveStatus('lecture-maths-108')"> Parabola L-4
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-109')">
+    <input type="checkbox" id="lecture-maths-109" onchange="saveStatus('lecture-maths-109')"> Ellipse and Hyperbola L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-110')">
+    <input type="checkbox" id="lecture-maths-110" onchange="saveStatus('lecture-maths-110')"> Ellipse and Hyperbola L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-111')">
+    <input type="checkbox" id="lecture-maths-111" onchange="saveStatus('lecture-maths-111')"> Ellipse and Hyperbola L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-112')">
+    <input type="checkbox" id="lecture-maths-112" onchange="saveStatus('lecture-maths-112')"> Ellipse and Hyperbola L-4
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-113')">
+    <input type="checkbox" id="lecture-maths-113" onchange="saveStatus('lecture-maths-113')"> Ellipse and Hyperbola L-5
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-114')">
+    <input type="checkbox" id="lecture-maths-114" onchange="saveStatus('lecture-maths-114')"> Ellipse and Hyperbola L-6
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-115')">
+    <input type="checkbox" id="lecture-maths-115" onchange="saveStatus('lecture-maths-115')"> Complex Numbers L-1
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-116')">
+    <input type="checkbox" id="lecture-maths-116" onchange="saveStatus('lecture-maths-116')"> Complex Numbers L-2
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-117')">
+    <input type="checkbox" id="lecture-maths-117" onchange="saveStatus('lecture-maths-117')"> Complex Numbers L-3
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-118')">
+    <input type="checkbox" id="lecture-maths-118" onchange="saveStatus('lecture-maths-118')"> Complex Numbers L-4
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-119')">
+    <input type="checkbox" id="lecture-maths-119" onchange="saveStatus('lecture-maths-119')"> Complex Numbers L-5
+</div>
+<div class="lecture-item" onclick="toggleCheckbox('lecture-maths-120')">
+    <input type="checkbox" id="lecture-maths-120" onchange="saveStatus('lecture-maths-120')"> Statistics One Shot
+</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
